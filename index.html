@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/styles.css"/>
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
     <title>NuCamp: A Better Way To Camp</title>
@@ -23,7 +23,7 @@
             <h2>a better way to camp</h2>
           </div>
           <div class="col-md-4 col-xl-2 mt-4">
-            <a  role="button" class="btn btn-lg btn-info" data-toggle="modal" data-target="#reserveModal">Reserve Campsite</a>
+            <a  role="button" class="btn btn-lg btn-info" id="reserveButton">Reserve Campsite</a>
           </div>
         </div>
       </div>
@@ -33,7 +33,7 @@
           <div class="modal-content">
               <div class="modal-header bg-info text-white">
                   <h3 class="modal-title">Reserve a Campsite</h3>
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <button type="button" class="close"></button>
               </div>
               <div class="modal-body">
                   <div class="container-fluid">
@@ -96,7 +96,7 @@
         <li class="nav-item"><a class="nav-link" href="contactus.html"><i class="fa fa-address-card fa-lg"></i> Contact</a></li>. . .
       </ul>
       <span class="navbar-text ml-auto">
-        <a role="button" data-toggle="modal" data-target="#loginModal">
+        <a role="button" id="loginButton">
             <i class="fa fa-sign-in"></i> Login
         </a>
     </span>
@@ -108,9 +108,8 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h3 class="modal-title">Login</h3>
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <button type="button" class="close" data-dismiss="modal"></button>
             </div>
-            // sd hello how are //
             <div class="modal-body">
                 <div class="container-fluid">
                     <form>
@@ -149,7 +148,11 @@
                 <ol class="carousel-indicators">
                   <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
                   <li data-target="#homeCarousel" data-slide-to="1"></li>
-                  <li data-target="#homeCarousel" data-slide-to="2"></li>
+                  <li data-target="#homeCarousel" data-slide-to="2"></li>                  
+                    <button class="btn btn-danger btn-sm" id="carouselButton">
+                        <i class="fa fa-pause"></i>
+                    </button>
+                    
               </ol>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
@@ -281,4 +284,9 @@
         $('[data-toggle="tooltip"]').tooltip()
     })
 </script>
+
+<script>
+  
+</script>
+<script src="js/scripts.js"></script>
 </html>
